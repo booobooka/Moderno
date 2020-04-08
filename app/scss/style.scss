@@ -278,11 +278,13 @@
             display: inline-block;
             margin-left: 3px;
             margin-right: 3px;
-            &.slick-active{
-                button{
+
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
+
             button {
                 border-radius: 50%;
                 background-color: rgb(232, 232, 232);
@@ -296,39 +298,47 @@
         }
     }
 }
+
 //end product slider
 
 //start advantages
-.advantages{
+.advantages {
     background-color: $bg;
     padding: 110px 0px;
 }
-.advantages-title{
+
+.advantages-title {
     color: #fff;
 }
-.advantages-inner{
+
+.advantages-inner {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
-.advantages-item{
+
+.advantages-item {
     max-width: 370px;
     text-align: center;
     padding: 0px 15px;
-    &:hover{
-        .advantages-item-image{
+
+    &:hover {
+        .advantages-item-image {
             background-color: $green;
             cursor: pointer;
-            path{
+
+            path {
                 fill: #fff;
             }
         }
-        .advantages-item-title{
+
+        .advantages-item-title {
             color: $green;
             cursor: pointer;
         }
     }
-    &-image{
+
+    &-image {
         width: 114px;
         height: 114px;
         background-color: #fff;
@@ -339,16 +349,61 @@
         margin: 0 auto 30px;
         transition: all .5s;
     }
-        &-title{
-            margin-bottom: 25px;
-            color: #fff;
-            font-weight: 500;
-            font-size: 24px;
-            transition: all .5s;
-        }
-        &-text{
-            font-size: 15px;
-            color: #b0bec5;
+
+    &-title {
+        margin-bottom: 25px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        transition: all .5s;
+    }
+
+    &-text {
+        font-size: 15px;
+        color: #b0bec5;
+    }
+}
+
+//end advantages
+
+//start author
+.author {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-box {
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-title {
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 260px;
+
+        span {
+            font-weight: 700;
         }
     }
-//end advantages
+
+    &-link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        background-color: #fff;
+    }
+}
+
+//end author
