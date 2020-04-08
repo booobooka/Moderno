@@ -54,41 +54,48 @@
             margin-left: 42px;
         }
     }
-    a{
+
+    a {
         color: #fff;
         font-size: 14px;
     }
 }
+
 // end header
 
 //start search
-.search{
+.search {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 535px;
 }
-.search-inner{
+
+.search-inner {
     padding: 155px 0 100px;
     color: #fff;
     text-align: center;
-    &-title{
+
+    &-title {
         font-size: 48px;
         font-weight: 700;
         margin-bottom: 10px;
         line-height: 72px;
     }
-    &-text{
+
+    &-text {
         margin-bottom: 50px;
         font-size: 20px;
         font-weight: 500;
         line-height: 30px;
     }
-    &-form{
+
+    &-form {
         max-width: 670px;
         margin: 0 auto;
         position: relative;
-        input{
+
+        input {
             display: block;
             width: 100%;
             box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
@@ -100,11 +107,13 @@
             outline: none;
             padding-left: 25px;
             padding-right: 60px;
-            &::placeholder{
+
+            &::placeholder {
                 color: #90a4ae;
             }
         }
-        button{
+
+        button {
             position: absolute;
             border: none;
             background-color: transparent;
@@ -113,51 +122,60 @@
         }
     }
 }
+
 //end search
 
 //start products
 
-.products{
+.products {
     padding: 110px 0px;
     background-color: $grey;
 }
-.products-inner-btn{
+
+.products-inner-btn {
     text-align: center;
     margin-bottom: 60px;
-    button{
+
+    button {
         padding: 12px 21px;
         border: none;
         background-color: #fff;
         color: $bg;
         cursor: pointer;
-        & + button{
+
+        &+button {
             margin-left: 5px;
         }
-        &.mixitup-control-active{
+
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
             outline: none;
         }
     }
 }
-.products-inner-container{
+
+.products-inner-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.product-item{
+
+.product-item {
     max-width: 442px;
     width: 100%;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
-    &-img{
+
+    &-img {
         min-height: 250px;
         background-repeat: no-repeat;
         display: block;
         background-position: center center;
         background-size: cover;
     }
-    &-content{
+
+    &-content {
         display: flex;
         justify-content: space-between;
         padding: 10px 30px;
@@ -166,35 +184,43 @@
         font-weight: 500;
         border-bottom: 1px solid #e7ecf2;
     }
-    &-name{
+
+    &-name {
         max-width: 310px;
     }
-    &-title{
+
+    &-title {
         color: $bg;
         font-size: 18px;
         display: block;
     }
-    &-category{
+
+    &-category {
         display: block;
         font-size: 14px;
         color: $green;
     }
-    &-price{
+
+    &-price {
         font-size: 20px;
         color: $bg;
         font-weight: 700;
     }
-    &-info{
+
+    &-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 70px;
         padding: 10px 30px;
     }
-    &-author{
+
+    &-author {
         display: flex;
         align-items: center;
-        .avatar{
+        max-width: 245px;
+
+        .avatar {
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -204,15 +230,24 @@
             background-size: cover;
             margin-right: 14px;
         }
-        span{
+
+        span {
             font-size: 14px;
             font-weight: 500;
         }
+
+        &-star {
+            span {
+                color: $bg;
+            }
+        }
     }
 }
-.product-bottom-btn{
+
+.product-bottom-btn {
     text-align: center;
-    button{
+
+    button {
         margin-top: 45px 5px 0;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
         border: none;
@@ -220,14 +255,50 @@
         color: $bg;
         padding: 20px 30px;
         cursor: pointer;
-        &.mixitup-control-active{
+
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
             outline: none;
         }
-    
+
     }
 }
+
 //end products
+//start product slider
+.product-slider {
+    padding: 110px 0px 120px;
+
+    .slick-dots {
+        text-align: center;
+        margin-top: 50px;
+
+        li {
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 3px;
+            &.slick-active{
+                button{
+                    background-color: $green;
+                }
+            }
+            button {
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                border: none;
+                font-size: 0;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+}
 
 
+
+
+
+//end product slider
